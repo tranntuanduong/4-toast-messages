@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Toast Messages</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./style.css">
+       
+        
+        <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+    </head>
+    <body>
+
+        <div class="button">
+            <div class="center">
+                <div onclick="showSuccessToast();" class="btn btn--success">Success</div>
+                <div onclick="showInfoToast();" class="btn btn--info">Info</div>
+                <div onclick="showWarningToast();" class="btn btn--warning">Warning</div>
+            </div>
+        </div>
+
+        <div id="toast"></div>
+
+       <script>
+           function showSuccessToast() {
+                toast({
+                    title: 'Success',
+                    message: 'Success - Anyone with access can view your invited visitors',
+                    type: 'success',
+                    icon: 'ti-check-box'
+                });    
+           }
+
+           function showInfoToast() {
+                toast({
+                    title: 'Info',
+                    message: 'Info - Anyone with access can view your invited visitors',
+                    type: 'info',
+                    icon: 'ti-info' 
+                });    
+           }
+
+           function showWarningToast() {
+                toast({
+                    title: 'Warning',
+                    message: 'Warning - Anyone with access can view your invited visitors',
+                    type: 'warning',
+                    icon: 'ti-alert'
+                });    
+           }
+       </script>
+       <script src="./toast.js"></script>
+    </body>
+</html>
+
+
+
